@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-  const BREAKPOINT = 900; // keep in sync with CSS @media breakpoints
+  const BREAKPOINT = 900;
 
   const toggles = Array.from(document.querySelectorAll('.menu-toggle'));
 
@@ -29,12 +29,11 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
-  // Ensure menu state matches current viewport on load
+  
   if (window.innerWidth > BREAKPOINT) {
     document.querySelectorAll('.site-header').forEach(h => closeMobileForHeader(h));
   }
-
-  // When viewport crosses the breakpoint, reset mobile menus to closed when wider than the breakpoint
+  
   const mq = window.matchMedia(`(max-width: ${BREAKPOINT}px)`);
   mq.addEventListener('change', (e) => {
     if (!e.matches) {

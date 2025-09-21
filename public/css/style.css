@@ -1,29 +1,61 @@
-:root{
-  --bg:#f6f8fa;
-  --card:#ffffff;
-  --muted:#6b7280;
-  --accent:#2563eb;
-  --accent-600:#1e40af;
-  --radius:12px;
-  --container:1100px;
+:root {
+  --bg: #f6f8fa;
+  --card: #ffffff;
+  --muted: #6b7280;
+  --accent: #2563eb;
+  --accent-600: #1e40af;
+  --radius: 12px;
+  --container: 1100px;
 }
 
-/* Menu toggle (hamburger) */
-.menu-toggle{display:none;background:transparent;border:0;color:inherit;padding:8px;border-radius:8px;cursor:pointer}
-.menu-toggle .bars{display:inline-block;width:22px;height:2px;background:rgba(255,255,255,0.95);position:relative}
-.menu-toggle .bars::before,.menu-toggle .bars::after{content:'';position:absolute;left:0;width:22px;height:2px;background:rgba(255,255,255,0.95)}
-.menu-toggle .bars::before{top:-7px}
-.menu-toggle .bars::after{top:7px}
-
-*{box-sizing:border-box}
-body{
-  margin:0;
-  font-family: Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
-  background:var(--bg);
-  color:#0f172a;
-  -webkit-font-smoothing:antialiased;
+.menu-toggle {
+  display: none;
+  background: transparent;
+  border: 0;
+  color: inherit;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
 }
-.container{max-width:var(--container);margin:0 auto;padding:0 20px}
+.menu-toggle .bars {
+  display: inline-block;
+  width: 22px;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.95);
+  position: relative;
+}
+.menu-toggle .bars::before,
+.menu-toggle .bars::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 22px;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.95);
+}
+.menu-toggle .bars::before {
+  top: -7px;
+}
+.menu-toggle .bars::after {
+  top: 7px;
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial;
+  background: var(--bg);
+  color: #0f172a;
+  -webkit-font-smoothing: antialiased;
+}
+.container {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 0 20px;
+}
 
 .site-header {
   background: linear-gradient(180deg, #0f172a 0%, #111827 100%);
@@ -217,7 +249,6 @@ body{
   }
 }
 
-/* Car detail */
 .car-detail .detail-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -235,7 +266,6 @@ body{
   color: var(--muted);
 }
 
-/* Enhanced car detail styles */
 .car-detail {
   padding: 28px;
   margin-block: 30px;
@@ -302,19 +332,36 @@ body{
   background: transparent;
 }
 
-/* Mobile nav panel */
-.mobile-nav{background:linear-gradient(180deg,#0f172a 0%, #0b1220 100%);color:#fff}
-.mobile-nav .container{display:flex;flex-direction:column;gap:8px;padding:12px 20px}
-.mobile-nav a{color:rgba(255,255,255,0.95);text-decoration:none;padding:10px 12px;border-radius:8px}
-.mobile-nav a:hover{background:rgba(255,255,255,0.04)}
-.mobile-account{margin-top:8px;opacity:0.9}
+.mobile-nav {
+  background: linear-gradient(180deg, #0f172a 0%, #0b1220 100%);
+  color: #fff;
+}
+.mobile-nav .container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 12px 20px;
+}
+.mobile-nav a {
+  color: rgba(255, 255, 255, 0.95);
+  text-decoration: none;
+  padding: 10px 12px;
+  border-radius: 8px;
+}
+.mobile-nav a:hover {
+  background: rgba(255, 255, 255, 0.04);
+}
+.mobile-account {
+  margin-top: 8px;
+  opacity: 0.9;
+}
 
-/* Strong hide for top-right account when mobile menu is visible
-  - `.site-header.mobile-open` is toggled by JS
-  - `:has()` rule hides account if mobile-nav is present and not hidden (works in modern browsers)
-  - `!important` ensures override if other styles re-show it */
-.site-header.mobile-open .account{display:none !important}
-.site-header:has(.mobile-nav:not([hidden])) .account{display:none !important}
+.site-header.mobile-open .account {
+  display: none !important;
+}
+.site-header:has(.mobile-nav:not([hidden])) .account {
+  display: none !important;
+}
 
 @media (max-width: 900px) {
   .hero {
@@ -323,11 +370,14 @@ body{
   }
   .main-nav {
     display: none;
-    
   }
-  .menu-toggle{display:inline-flex}
+  .menu-toggle {
+    display: inline-flex;
+  }
   /* Hide top-right account when the hamburger/menu bar is showing */
-  .account{display:none}
+  .account {
+    display: none;
+  }
   .grid {
     grid-template-columns: 1fr;
   }
@@ -335,5 +385,7 @@ body{
     gap: 12px;
   }
   /* When mobile menu is open, hide the top-right account link to avoid duplication */
-  .site-header.mobile-open .account{display:none}
+  .site-header.mobile-open .account {
+    display: none;
+  }
 }
