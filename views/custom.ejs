@@ -13,10 +13,10 @@
         <nav class="main-nav">
           <a href="/">Home</a>
           <a href="/custom">Custom</a>
-          <a href="#">Sedan</a>
-          <a href="#">Sport</a>
-          <a href="#">SUV</a>
-          <a href="#">Truck</a>
+          <a href="/sedans">Sedan</a>
+          <a href="/sport">Sport</a>
+          <a href="/suv">SUV</a>
+          <a href="/truck">Truck</a>
         </nav>
         <div class="account">My Account</div>
       </div>
@@ -28,9 +28,9 @@
         <% cars.forEach(function(car){ %>
           <article class="card car-card">
             <a href="/cars/<%= car.id %>">
-              <img src="<%= car.imagen %>" alt="<%= car.nombre_custom %>" />
-              <h4><%= car.nombre_custom %> — <small><%= car.marca %> <%= car.modelo %></small></h4>
-              <p class="price"><%= car.moneda %> <%= car.precio.toLocaleString() %></p>
+              <img src="<%= car.image %>" alt="<%= car.custom_name %>" />
+              <h4><%= car.custom_name %> — <small><%= car.make %> <%= car.model %></small></h4>
+              <p class="price"><%= car.currency %> <%= car.price.toLocaleString() %></p>
             </a>
           </article>
         <% }) %>

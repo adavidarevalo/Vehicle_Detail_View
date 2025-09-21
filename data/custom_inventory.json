@@ -1,272 +1,84 @@
 {
   "dealer": {
-    "nombre": "Premium Custom Motors",
-    "contacto": {
-      "telefono": "+1-555-CUSTOM",
-      "email": "ventas@premiumcustom.com",
-      "direccion": "1234 Speed Street, Motor City, MC 12345"
+    "name": "Premium Custom Motors",
+    "contact": {
+      "phone": "+1-555-CUSTOM",
+      "email": "sales@premiumcustom.com",
+      "address": "1234 Speed Street, Motor City, MC 12345"
     }
   },
-  "inventario": [
+  "inventory": [
     {
       "id": "PCM001",
-      "marca": "Ford",
-      "modelo": "Mustang GT 5.0",
-      "nombre_custom": "Thunder Strike",
-      "año": 2023,
-      "precio": 89900,
-      "moneda": "USD",
-      "motor": {
-        "tipo": "V8 5.0L Coyote Supercharged",
-        "potencia": 750,
-        "unidad_potencia": "HP"
+      "make": "Ford",
+      "model": "Mustang GT 5.0",
+      "custom_name": "Thunder Strike",
+      "year": 2023,
+      "price": 89900,
+      "currency": "USD",
+      "engine": {
+        "type": "V8 5.0L Coyote Supercharged",
+        "horsepower": 750,
+        "power_unit": "HP"
       },
-      "modificaciones": [
-        "Kit carrocería Shelby",
-        "Suspensión coilover",
-        "Escape Borla ATAK",
-        "Llantas Forgiato 20\""
+      "modifications": [
+        "Shelby body kit",
+        "Coilover suspension",
+        "Borla ATAK exhaust",
+        "Forgiato 20\" wheels"
       ],
-      "color": "Azul metálico con franjas negras",
-      "categoria": "Muscle Car",
-      "imagen": "https://images.unsplash.com/photo-1494905998402-395d579af36f?w=800&h=600&fit=crop",
-      "disponible": true
+      "color": "Metallic blue with black stripes",
+      "category": "Muscle Car",
+      "image": "https://images.unsplash.com/photo-1494905998402-395d579af36f?w=800&h=600&fit=crop",
+      "available": true
     },
     {
       "id": "PCM002",
-      "marca": "Chevrolet",
-      "modelo": "Camaro SS",
-      "nombre_custom": "Black Widow",
-      "año": 2022,
-      "precio": 78500,
-      "moneda": "USD",
-      "motor": {
-        "tipo": "V8 6.2L LT1",
-        "potencia": 480,
-        "unidad_potencia": "HP"
+      "make": "Chevrolet",
+      "model": "Camaro SS",
+      "custom_name": "Black Widow",
+      "year": 2022,
+      "price": 78500,
+      "currency": "USD",
+      "engine": {
+        "type": "V8 6.2L LT1",
+        "horsepower": 480,
+        "power_unit": "HP"
       },
-      "modificaciones": [
-        "Capó de fibra de carbono",
-        "Splitter frontal",
-        "Difusor trasero",
-        "Sistema de óxido nitroso"
+      "modifications": [
+        "Carbon fiber hood",
+        "Front splitter",
+        "Rear diffuser",
+        "Nitrous oxide system"
       ],
-      "color": "Negro mate con detalles rojos",
-      "categoria": "Muscle Car",
-      "imagen": "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=800&h=600&fit=crop",
-      "disponible": true
+      "color": "Matte black with red accents",
+      "category": "Muscle Car",
+      "image": "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=800&h=600&fit=crop",
+      "available": true
     },
     {
       "id": "PCM003",
-      "marca": "Dodge",
-      "modelo": "Challenger SRT Hellcat",
-      "nombre_custom": "Demon Hunter",
-      "año": 2023,
-      "precio": 95750,
-      "moneda": "USD",
-      "motor": {
-        "tipo": "V8 6.2L Supercharged",
-        "potencia": 797,
-        "unidad_potencia": "HP"
+      "make": "Dodge",
+      "model": "Challenger SRT Hellcat",
+      "custom_name": "Demon Hunter",
+      "year": 2023,
+      "price": 95750,
+      "currency": "USD",
+      "engine": {
+        "type": "V8 6.2L Supercharged",
+        "horsepower": 797,
+        "power_unit": "HP"
       },
-      "modificaciones": [
-        "Kit widebody",
+      "modifications": [
+        "Widebody kit",
         "Roll cage",
-        "Asientos Recaro",
-        "Sistema de escape personalizado"
+        "Recaro seats",
+        "Custom exhaust system"
       ],
       "color": "Plum Crazy Purple",
-      "categoria": "Muscle Car",
-      "imagen": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fs1.cdn.autoevolution.com%2Fimages%2Fnews%2Fgallery%2Fdodge-reveals-2018-challenger-srt-hellcat-widebody-with-demon-inspired-look_1.jpg&f=1&nofb=1&ipt=adc0321fb58add3c0466f445054436991aabbd49873d169ef5c3b9cb3deb5731",
-      "disponible": true
-    },
-    {
-      "id": "PCM004",
-      "marca": "BMW",
-      "modelo": "M4 Competition",
-      "nombre_custom": "Alpine Beast",
-      "año": 2023,
-      "precio": 112000,
-      "moneda": "USD",
-      "motor": {
-        "tipo": "I6 3.0L Twin-Turbo",
-        "potencia": 630,
-        "unidad_potencia": "HP"
-      },
-      "modificaciones": [
-        "Kit M Performance",
-        "Componentes de fibra de carbono",
-        "Suspensión KW",
-        "Frenos Brembo"
-      ],
-      "color": "Alpine White con detalles en fibra de carbono",
-      "categoria": "Deportivo Europeo",
-      "imagen": "https://images.unsplash.com/photo-1555215695-3004980ad54e?w=800&h=600&fit=crop",
-      "disponible": true
-    },
-    {
-      "id": "PCM005",
-      "marca": "Audi",
-      "modelo": "R8 V10 Plus",
-      "nombre_custom": "Carbon Fury",
-      "año": 2022,
-      "precio": 185900,
-      "moneda": "USD",
-      "motor": {
-        "tipo": "V10 5.2L FSI",
-        "potencia": 710,
-        "unidad_potencia": "HP"
-      },
-      "modificaciones": [
-        "Kit carrocería Prior Design",
-        "Escape Akrapovic",
-        "Llantas HRE",
-        "Interior personalizado"
-      ],
-      "color": "Gris Nardo con fibra de carbono expuesta",
-      "categoria": "Deportivo Europeo",
-      "imagen": "https://images.unsplash.com/photo-1544636331-e26879cd4d9b?w=800&h=600&fit=crop",
-      "disponible": true
-    },
-    {
-      "id": "PCM006",
-      "marca": "Porsche",
-      "modelo": "911 Turbo S",
-      "nombre_custom": "Street Racer",
-      "año": 2023,
-      "precio": 210500,
-      "moneda": "USD",
-      "motor": {
-        "tipo": "H6 3.8L Twin-Turbo",
-        "potencia": 750,
-        "unidad_potencia": "HP"
-      },
-      "modificaciones": [
-        "Kit aerodinámico Techart",
-        "Suspensión ajustable",
-        "Roll cage opcional",
-        "Escape deportivo"
-      ],
-      "color": "Guards Red con detalles negros",
-      "categoria": "Deportivo Europeo",
-      "imagen": "https://images.unsplash.com/photo-1503736334956-4c8f8e92946d?w=800&h=600&fit=crop",
-      "disponible": true
-    },
-    {
-      "id": "PCM007",
-      "marca": "Nissan",
-      "modelo": "Skyline GT-R R34",
-      "nombre_custom": "Tokyo Drift Special",
-      "año": 1999,
-      "año_restauracion": 2023,
-      "precio": 165000,
-      "moneda": "USD",
-      "motor": {
-        "tipo": "RB26DETT 2.6L Twin-Turbo",
-        "potencia": 650,
-        "unidad_potencia": "HP"
-      },
-      "modificaciones": [
-        "Turbo Garrett",
-        "Intercooler HKS",
-        "Suspensión Ohlins",
-        "Interior Bride"
-      ],
-      "color": "Bayside Blue con vinilos personalizados",
-      "categoria": "JDM Legend",
-      "imagen": "https://images.unsplash.com/photo-1617531653332-bd46c24f2068?w=800&h=600&fit=crop",
-      "disponible": true
-    },
-    {
-      "id": "PCM008",
-      "marca": "Toyota",
-      "modelo": "Supra MK5",
-      "nombre_custom": "Phoenix Rising",
-      "año": 2023,
-      "precio": 95500,
-      "moneda": "USD",
-      "motor": {
-        "tipo": "I6 3.0L Twin-Turbo",
-        "potencia": 550,
-        "unidad_potencia": "HP"
-      },
-      "modificaciones": [
-        "Turbo de mayor flujo",
-        "Intercooler frontal",
-        "Suspensión BC Racing",
-        "Escape Armytrix"
-      ],
-      "color": "Naranja metálico con detalles negros",
-      "categoria": "JDM Legend",
-      "imagen": "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?w=800&h=600&fit=crop",
-      "disponible": true
-    },
-    {
-      "id": "PCM009",
-      "marca": "Honda",
-      "modelo": "Civic Type R",
-      "nombre_custom": "Street Samurai",
-      "año": 2023,
-      "precio": 68900,
-      "moneda": "USD",
-      "motor": {
-        "tipo": "I4 2.0L Turbo",
-        "potencia": 420,
-        "unidad_potencia": "HP"
-      },
-      "modificaciones": [
-        "Turbo híbrido",
-        "Kit aerodinámico Mugen",
-        "Suspensión Bilstein",
-        "Jaula antivuelco"
-      ],
-      "color": "Championship White con detalles rojos",
-      "categoria": "JDM Legend",
-      "imagen": "https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?w=800&h=600&fit=crop",
-      "disponible": true
-    },
-    {
-      "id": "PCM010",
-      "marca": "McLaren",
-      "modelo": "720S",
-      "nombre_custom": "Velocity Demon",
-      "año": 2022,
-      "precio": 385000,
-      "moneda": "USD",
-      "motor": {
-        "tipo": "V8 4.0L Twin-Turbo",
-        "potencia": 850,
-        "unidad_potencia": "HP"
-      },
-      "modificaciones": [
-        "Kit aerodinámico completo",
-        "Escape Akrapovic titanio",
-        "Suspensión activa mejorada",
-        "Interior MSO personalizado"
-      ],
-      "color": "Volcano Orange con fibra de carbono",
-      "categoria": "Superdeportivo",
-      "imagen": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.motor1.com%2Fimages%2Fmgl%2FWLBMN%2Fs3%2Fmclaren-720s-vs-srt-demon.jpg&f=1&nofb=1&ipt=6a0e1553aa441e3084a93b3e604336f247e52bff4a911af2b2f32ca2e44322c2",
-      "disponible": false,
-      "fecha_disponibilidad": "2024-10-15"
+      "category": "Muscle Car",
+      "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fs1.cdn.autoevolution.com%2Fimages%2Fnews%2Fgallery%2Fdodge-reveals-2018-challenger-srt-hellcat-widebody-with-demon-inspired-look_1.jpg&f=1&nofb=1&ipt=adc0321fb58add3c0466f445054436991aabbd49873d169ef5c3b9cb3deb5731",
+      "available": true
     }
-  ],
-  "estadisticas": {
-    "total_vehiculos": 10,
-    "disponibles": 9,
-    "precio_promedio": 148995,
-    "categorias": {
-      "Muscle Car": 3,
-      "Deportivo Europeo": 3,
-      "JDM Legend": 3,
-      "Superdeportivo": 1
-    }
-  },
-  "servicios_adicionales": [
-    "Financiamiento personalizado",
-    "Garantía extendida en modificaciones",
-    "Servicio de entrega a domicilio",
-    "Mantenimiento especializado",
-    "Personalización adicional bajo pedido"
   ]
 }

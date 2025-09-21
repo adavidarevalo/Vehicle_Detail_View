@@ -10,13 +10,13 @@ function loadData() {
 
 exports.index = (req, res) => {
   const data = loadData();
-  res.render('custom', { title: 'Custom Gallery', cars: data.inventario });
+  res.render('custom', { title: 'Custom Gallery', cars: data.inventory });
 };
 
 exports.show = (req, res) => {
   const id = req.params.id;
   const data = loadData();
-  const car = data.inventario.find(c => c.id === id);
+  const car = data.inventory.find(c => c.id === id);
   if (!car) return res.status(404).render('404', { url: req.originalUrl });
-  res.render('car', { title: car.nombre_custom || car.modelo, car });
+  res.render('car', { title: car.custom_name || car.model, car });
 };

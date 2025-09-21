@@ -1,344 +1,84 @@
 {
   "dealer": {
-    "nombre": "Luxury Sedan Specialists",
-    "contacto": {
-      "telefono": "+1-555-SEDAN1",
-      "email": "ventas@luxurysedan.com",
-      "direccion": "5678 Executive Blvd, Business District, BD 54321"
+    "name": "Budget Sedan Center",
+    "contact": {
+      "phone": "+1-555-BUDGET",
+      "email": "sales@budgetsedan.com",
+      "address": "2468 Economy Blvd, Value City, VC 13579"
     }
   },
-  "inventario": [
+  "inventory": [
     {
-      "id": "LSS001",
-      "marca": "BMW",
-      "modelo": "M5 Competition",
-      "nombre_custom": "Executive Thunder",
-      "año": 2024,
-      "precio": 135500,
-      "moneda": "USD",
-      "motor": {
-        "tipo": "V8 4.4L Twin-Turbo",
-        "potencia": 720,
-        "unidad_potencia": "HP"
+      "id": "BSC001",
+      "make": "Nissan",
+      "model": "Sentra SV",
+      "custom_name": "Street Fighter",
+      "year": 2023,
+      "price": 24500,
+      "currency": "USD",
+      "engine": {
+        "type": "I4 2.0L Naturally Aspirated",
+        "horsepower": 149,
+        "power_unit": "HP"
       },
-      "modificaciones": [
-        "Reprogramación ECU Stage 2",
-        "Escape Akrapovic Evolution",
-        "Suspensión KW Variant 4",
-        "Llantas Vorsteiner 21\""
+      "modifications": [
+        "Spectre cold air intake",
+        "Magnaflow performance exhaust",
+        "Eibach lowering springs",
+        "Konig 17' black wheels"
       ],
-      "color": "Storm Bay con interior Merino negro",
-      "categoria": "Sedan Deportivo Premium",
-      "imagen": "https://images.unsplash.com/photo-1555215695-3004980ad54e?w=800&h=600&fit=crop",
-      "disponible": true
+      "color": "Gun Metallic with red accents",
+      "category": "Economy Compact Sedan",
+      "image": "https://images.unsplash.com/photo-1550355191-aa8a80b41353?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
+      "available": true
     },
     {
-      "id": "LSS002",
-      "marca": "Mercedes-Benz",
-      "modelo": "AMG E63 S",
-      "nombre_custom": "Silver Bullet",
-      "año": 2024,
-      "precio": 142800,
-      "moneda": "USD",
-      "motor": {
-        "tipo": "V8 4.0L Biturbo",
-        "potencia": 680,
-        "unidad_potencia": "HP"
+      "id": "BSC002",
+      "make": "Hyundai",
+      "model": "Elantra SE",
+      "custom_name": "Seoul Cruiser",
+      "year": 2024,
+      "price": 26200,
+      "currency": "USD",
+      "engine": {
+        "type": "I4 2.0L GDI",
+        "horsepower": 147,
+        "power_unit": "HP"
       },
-      "modificaciones": [
-        "Kit aerodinámico AMG",
-        "Escape Brabus",
-        "Suspensión AMG Ride Control+",
-        "Interior designo exclusivo"
+      "modifications": [
+        "K&N drop-in intake",
+        "Custom catback exhaust",
+        "H&R Sport springs",
+        "Rear sport spoiler"
       ],
-      "color": "Plata iridio con detalles carbono",
-      "categoria": "Sedan Deportivo Premium",
-      "imagen": "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?w=800&h=600&fit=crop",
-      "disponible": true
+      "color": "Intense Blue with black interior",
+      "category": "Economy Compact Sedan",
+      "image": "https://images.unsplash.com/photo-1583121274602-3e2820c69888?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
+      "available": true
     },
     {
-      "id": "LSS003",
-      "marca": "Audi",
-      "modelo": "RS7 Sportback",
-      "nombre_custom": "Phantom Elite",
-      "año": 2023,
-      "precio": 128900,
-      "moneda": "USD",
-      "motor": {
-        "tipo": "V8 4.0L TFSI Twin-Turbo",
-        "potencia": 650,
-        "unidad_potencia": "HP"
+      "id": "BSC003",
+      "make": "Toyota",
+      "model": "Corolla LE",
+      "custom_name": "Daily Driver Pro",
+      "year": 2023,
+      "price": 25800,
+      "currency": "USD",
+      "engine": {
+        "type": "I4 2.0L Dynamic Force",
+        "horsepower": 169,
+        "power_unit": "HP"
       },
-      "modificaciones": [
-        "Kit carrocería ABT",
-        "Escape Milltek Sport",
-        "Suspensión aire adaptativa",
-        "Llantas HRE forjadas 22\""
+      "modifications": [
+        "TRD cold air intake",
+        "TRD catback exhaust",
+        "TRD lowering springs",
+        "TRD 17' wheels with Michelin tires"
       ],
-      "color": "Negro fantasma con detalles rojos",
-      "categoria": "Sedan Deportivo Premium",
-      "imagen": "https://images.unsplash.com/photo-1544636331-e26879cd4d9b?w=800&h=600&fit=crop",
-      "disponible": true
-    },
-    {
-      "id": "LSS004",
-      "marca": "Genesis",
-      "modelo": "G90 Black",
-      "nombre_custom": "Presidential Suite",
-      "año": 2024,
-      "precio": 89500,
-      "moneda": "USD",
-      "motor": {
-        "tipo": "V6 3.5L Twin-Turbo",
-        "potencia": 420,
-        "unidad_potencia": "HP"
-      },
-      "modificaciones": [
-        "Paquete VIP con asientos masajeadores",
-        "Sistema audio Lexicon premium",
-        "Suspensión neumática adaptativa",
-        "Acabados en madera de nogal"
-      ],
-      "color": "Negro obsidiana con interior beige",
-      "categoria": "Sedan Ejecutivo Luxury",
-      "imagen": "https://images.unsplash.com/photo-1606016159991-2df5d17131b8?w=800&h=600&fit=crop",
-      "disponible": true
-    },
-    {
-      "id": "LSS005",
-      "marca": "Cadillac",
-      "modelo": "CT5-V Blackwing",
-      "nombre_custom": "American Pride",
-      "año": 2024,
-      "precio": 98750,
-      "moneda": "USD",
-      "motor": {
-        "tipo": "V8 6.2L Supercharged",
-        "potencia": 725,
-        "unidad_potencia": "HP"
-      },
-      "modificaciones": [
-        "Paquete Track Performance",
-        "Frenos Brembo carbocerámica",
-        "Suspensión Magnetic Ride 4.0",
-        "Interior Recaro con Alcántara"
-      ],
-      "color": "Rojo Velocity con detalles carbono",
-      "categoria": "Sedan Deportivo Americano",
-      "imagen": "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=800&h=600&fit=crop",
-      "disponible": true
-    },
-    {
-      "id": "LSS006",
-      "marca": "Lexus",
-      "modelo": "LS 500F Sport",
-      "nombre_custom": "Zen Master",
-      "año": 2024,
-      "precio": 105200,
-      "moneda": "USD",
-      "motor": {
-        "tipo": "V6 3.5L Twin-Turbo Hybrid",
-        "potencia": 480,
-        "unidad_potencia": "HP"
-      },
-      "modificaciones": [
-        "Paquete Executive con shoji screens",
-        "Sistema audio Mark Levinson 3D",
-        "Asientos Kiriko glass accents",
-        "Suspensión air adaptive variable"
-      ],
-      "color": "Blanco Sonic con interior Shimamoku",
-      "categoria": "Sedan Ejecutivo Luxury",
-      "imagen": "https://images.unsplash.com/photo-1503736334956-4c8f8e92946d?w=800&h=600&fit=crop",
-      "disponible": true
-    },
-    {
-      "id": "LSS007",
-      "marca": "Jaguar",
-      "modelo": "XF SVR",
-      "nombre_custom": "British Beast",
-      "año": 2023,
-      "precio": 112400,
-      "moneda": "USD",
-      "motor": {
-        "tipo": "V8 5.0L Supercharged",
-        "potencia": 575,
-        "unidad_potencia": "HP"
-      },
-      "modificaciones": [
-        "Kit aerodinámico SVR completo",
-        "Escape activo deportivo",
-        "Suspensión adaptativa configurable",
-        "Interior Windsor leather"
-      ],
-      "color": "British Racing Green con techo negro",
-      "categoria": "Sedan Deportivo Premium",
-      "imagen": "https://images.unsplash.com/photo-1617531653332-bd46c24f2068?w=800&h=600&fit=crop",
-      "disponible": true
-    },
-    {
-      "id": "LSS008",
-      "marca": "Infiniti",
-      "modelo": "Q50 Red Sport 400",
-      "nombre_custom": "Tokyo Executive",
-      "año": 2023,
-      "precio": 68900,
-      "moneda": "USD",
-      "motor": {
-        "tipo": "V6 3.0L Twin-Turbo",
-        "potencia": 450,
-        "unidad_potencia": "HP"
-      },
-      "modificaciones": [
-        "Turbo upgrade kit",
-        "Suspensión coilover Tein",
-        "Frenos sport Akebono",
-        "Interior semi-anilina custom"
-      ],
-      "color": "Dynamic Sunstone con interior negro",
-      "categoria": "Sedan Deportivo Premium",
-      "imagen": "https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?w=800&h=600&fit=crop",
-      "disponible": true
-    },
-    {
-      "id": "LSS009",
-      "marca": "Tesla",
-      "modelo": "Model S Plaid",
-      "nombre_custom": "Electric Storm",
-      "año": 2024,
-      "precio": 118500,
-      "moneda": "USD",
-      "motor": {
-        "tipo": "Tri-Motor Electric",
-        "potencia": 1020,
-        "unidad_potencia": "HP"
-      },
-      "modificaciones": [
-        "Unplugged Performance aero kit",
-        "Suspensión ajustable lowering",
-        "Llantas forjadas 21\" Turbine",
-        "Interior carbono fiber trim"
-      ],
-      "color": "Pearl White Multi-Coat con interior blanco",
-      "categoria": "Sedan Eléctrico Performance",
-      "imagen": "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=800&h=600&fit=crop",
-      "disponible": true
-    },
-    {
-      "id": "LSS010",
-      "marca": "Maserati",
-      "modelo": "Quattroporte Trofeo",
-      "nombre_custom": "Italian Stallion",
-      "año": 2024,
-      "precio": 158900,
-      "moneda": "USD",
-      "motor": {
-        "tipo": "V8 3.8L Twin-Turbo",
-        "potencia": 630,
-        "unidad_potencia": "HP"
-      },
-      "modificaciones": [
-        "Escape deportivo Capristo",
-        "Suspensión Skyhook adaptativa",
-        "Interior Pieno Fiore leather",
-        "Llantas Trofeo forjadas 21\""
-      ],
-      "color": "Rosso Trionfale con detalles carbono",
-      "categoria": "Sedan Deportivo Premium",
-      "imagen": "https://images.unsplash.com/photo-1494905998402-395d579af36f?w=800&h=600&fit=crop",
-      "disponible": false,
-      "fecha_disponibilidad": "2024-11-20"
-    },
-    {
-      "id": "LSS011",
-      "marca": "Alfa Romeo",
-      "modelo": "Giulia Quadrifoglio",
-      "nombre_custom": "Milano Racer",
-      "año": 2023,
-      "precio": 85400,
-      "moneda": "USD",
-      "motor": {
-        "tipo": "V6 2.9L Twin-Turbo",
-        "potencia": 540,
-        "unidad_potencia": "HP"
-      },
-      "modificaciones": [
-        "Escape Akrapovic Evolution",
-        "Suspensión KW Variant 3",
-        "Frenos Brembo carbocerámicos",
-        "Interior Alcántara racing"
-      ],
-      "color": "Rosso Competizione con techo carbono",
-      "categoria": "Sedan Deportivo Premium",
-      "imagen": "https://images.unsplash.com/photo-1617531653332-bd46c24f2068?w=800&h=600&fit=crop",
-      "disponible": true
-    },
-    {
-      "id": "LSS012",
-      "marca": "Volvo",
-      "modelo": "S90 T8 Polestar",
-      "nombre_custom": "Nordic Thunder",
-      "año": 2024,
-      "precio": 78900,
-      "moneda": "USD",
-      "motor": {
-        "tipo": "I4 2.0L Supercharged + Turbo Hybrid",
-        "potencia": 455,
-        "unidad_potencia": "HP"
-      },
-      "modificaciones": [
-        "Paquete Polestar Engineered",
-        "Suspensión Öhlins DFV",
-        "Frenos Brembo dorados",
-        "Interior Nappa leather perforated"
-      ],
-      "color": "Crystal White Pearl con detalles dorados",
-      "categoria": "Sedan Híbrido Performance",
-      "imagen": "https://images.unsplash.com/photo-1606016159991-2df5d17131b8?w=800&h=600&fit=crop",
-      "disponible": true
+      "color": "Classic Silver with TRD accents",
+      "category": "Reliable Compact Sedan",
+      "image": "https://images.unsplash.com/photo-1606016159991-2df5d17131b8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
+      "available": true
     }
-  ],
-  "estadisticas": {
-    "total_vehiculos": 12,
-    "disponibles": 11,
-    "precio_promedio": 105354,
-    "categorias": {
-      "Sedan Deportivo Premium": 7,
-      "Sedan Ejecutivo Luxury": 2,
-      "Sedan Deportivo Americano": 1,
-      "Sedan Eléctrico Performance": 1,
-      "Sedan Híbrido Performance": 1
-    },
-    "rango_precios": {
-      "minimo": 68900,
-      "maximo": 158900
-    },
-    "potencia_promedio": 588
-  },
-  "servicios_adicionales": [
-    "Financiamiento ejecutivo especializado",
-    "Programa de mantenimiento VIP",
-    "Servicio de chofer profesional",
-    "Detailing premium mensual",
-    "Garantía extendida en modificaciones",
-    "Entrega y recogida a domicilio/oficina",
-    "Personalización interior bajo pedido"
-  ],
-  "paquetes_especiales": {
-    "executive_package": {
-      "descripcion": "Ideal para ejecutivos que buscan confort y performance",
-      "incluye": ["Tintado premium", "Sistema de seguridad avanzado", "Cargador inalámbrico", "Climatización de asientos"],
-      "precio_adicional": 5500
-    },
-    "performance_package": {
-      "descripcion": "Para conductores que priorizan la deportividad",
-      "incluye": ["Reprogramación ECU", "Frenos deportivos", "Suspensión deportiva", "Escape deportivo"],
-      "precio_adicional": 8900
-    },
-    "luxury_package": {
-      "descripcion": "Máximo lujo y comodidad",
-      "incluye": ["Asientos masajeadores", "Sistema audio premium", "Iluminación ambiental", "Acabados en madera/carbono"],
-      "precio_adicional": 12500
-    }
-  }
+  ]
 }

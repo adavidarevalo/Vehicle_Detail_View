@@ -13,10 +13,10 @@
         <nav class="main-nav">
           <a href="/">Home</a>
           <a href="/custom">Custom</a>
-          <a href="#">Sedan</a>
-          <a href="#">Sport</a>
-          <a href="#">SUV</a>
-          <a href="#">Truck</a>
+          <a href="/sedans">Sedan</a>
+          <a href="/sport">Sport</a>
+          <a href="/suv">SUV</a>
+          <a href="/truck">Truck</a>
         </nav>
         <div class="account">My Account</div>
       </div>
@@ -24,24 +24,24 @@
 
     <main class="container">
       <div class="card car-detail">
-        <h2><%= car.nombre_custom %> — <small><%= car.marca %> <%= car.modelo %></small></h2>
+  <h2><%= car.custom_name %> — <small><%= car.make %> <%= car.model %></small></h2>
         <div class="detail-grid">
           <div class="image">
-            <img src="<%= car.imagen %>" alt="<%= car.nombre_custom %>" />
+            <img src="<%= car.image %>" alt="<%= car.custom_name %>" />
           </div>
           <div class="info">
-            <p><strong>Precio:</strong> <%= car.moneda %> <%= car.precio.toLocaleString() %></p>
-            <p><strong>Año:</strong> <%= car.año %></p>
-            <p><strong>Motor:</strong> <%= car.motor.tipo %> — <%= car.motor.potencia %> <%= car.motor.unidad_potencia %></p>
+            <p><strong>Price:</strong> <%= car.currency %> <%= car.price.toLocaleString() %></p>
+            <p><strong>Year:</strong> <%= car.year %></p>
+            <p><strong>Engine:</strong> <%= car.engine.type %> — <%= car.engine.horsepower %> <%= car.engine.power_unit %></p>
             <p><strong>Color:</strong> <%= car.color %></p>
-            <p><strong>Categoría:</strong> <%= car.categoria %></p>
-            <p><strong>Modificaciones:</strong></p>
+            <p><strong>Category:</strong> <%= car.category %></p>
+            <p><strong>Modifications:</strong></p>
             <ul>
-              <% car.modificaciones.forEach(function(m){ %>
+              <% car.modifications.forEach(function(m){ %>
                 <li><%= m %></li>
               <% }) %>
             </ul>
-            <p><strong>Disponible:</strong> <%= car.disponible ? 'Sí' : 'No' %></p>
+            <p><strong>Available:</strong> <%= car.available ? 'Yes' : 'No' %></p>
             <a class="btn primary" href="#">Contact Dealer</a>
           </div>
         </div>

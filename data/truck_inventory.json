@@ -1,0 +1,84 @@
+{
+  "dealer": {
+    "name": "American Truck Masters",
+    "contact": {
+      "phone": "+1-555-TRUCK-1",
+      "email": "sales@americantrucks.com",
+      "address": "1234 Hauler Highway, Steel City, SC 45678"
+    }
+  },
+  "inventory": [
+    {
+      "id": "ATM001",
+      "make": "Ford",
+      "model": "F-150 Raptor",
+      "custom_name": "Desert Thunder",
+      "year": 2024,
+      "price": 78900,
+      "currency": "USD",
+      "engine": {
+        "type": "V6 3.5L EcoBoost Twin-Turbo",
+        "horsepower": 450,
+        "power_unit": "HP"
+      },
+      "modifications": [
+        "Fox Racing 3.0 shocks upgrade",
+        "37\" BFGoodrich KM3 tires",
+        "ADD Stealth fighter front bumper",
+        "Rigid Industries LED light bar"
+      ],
+      "color": "Code Orange with black Raptor graphics",
+      "category": "High-Performance Off-Road Truck",
+      "image": "https://images.unsplash.com/photo-1544636331-e26879cd4d9b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
+      "available": true
+    },
+    {
+      "id": "ATM002",
+      "make": "Chevrolet",
+      "model": "Silverado 1500 Trail Boss",
+      "custom_name": "Mountain King",
+      "year": 2024,
+      "price": 54900,
+      "currency": "USD",
+      "engine": {
+        "type": "V8 5.3L EcoTec3",
+        "horsepower": 355,
+        "power_unit": "HP"
+      },
+      "modifications": [
+        "Rough Country 6\" lift kit",
+        "Nitto Ridge Grappler 35\" tires",
+        "Warn VR EVO 10-S winch",
+        "Bushwacker pocket fender flares"
+      ],
+      "color": "Shadow Gray with red Z71 accents",
+      "category": "Mid-Size Off-Road Truck",
+      "image": "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
+      "available": true
+    },
+    {
+      "id": "ATM003",
+      "make": "RAM",
+      "model": "1500 TRX",
+      "custom_name": "Hellcat Hunter",
+      "year": 2024,
+      "price": 98500,
+      "currency": "USD",
+      "engine": {
+        "type": "V8 6.2L Supercharged HEMI",
+        "horsepower": 702,
+        "power_unit": "HP"
+      },
+      "modifications": [
+        "Borla ATAK exhaust system",
+        "Mopar cold air intake",
+        "TRX beadlock wheels upgrade",
+        "Bedliner spray-in premium"
+      ],
+      "color": "Flame Red with TRX black graphics",
+      "category": "Super Duty Performance Truck",
+      "image": "https://images.unsplash.com/photo-1606016159991-2df5d17131b8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
+      "available": true
+    }
+  ]
+}
