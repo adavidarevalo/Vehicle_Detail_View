@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Browse vehicle galleries at CSE Motors, including Custom, Sedans, Sport, SUV, and Truck categories with prices and specs." />
     <title><%= title %> - CSE Motors</title>
     <link rel="stylesheet" href="/css/style.css" />
   </head>
@@ -48,7 +49,7 @@
             <a href="/cars/<%= car.id %>">
               <img src="<%= car.image %>" alt="<%= car.custom_name %>" />
               <h4><%= car.custom_name %> — <small><%= car.make %> <%= car.model %></small></h4>
-              <p class="price"><%= car.currency %> <%= car.price.toLocaleString() %></p>
+              <p class="price"><%= new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(car.price || 0) %></p>
             </a>
           </article>
         <% }) %>
@@ -58,7 +59,7 @@
     <footer class="site-footer">
       <div class="container">
         <small>&copy; <%= new Date().getFullYear() %> CSE Motors</small>
-        <div><a href="/error/500">Trigger 500 Error (test)</a></div>
+        <div><a href="/error/500">Trigger 500 Error</a></div>
       </div>
     </footer>
     <script src="/js/menu.js"></script>

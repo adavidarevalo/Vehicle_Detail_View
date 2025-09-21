@@ -1,14 +1,10 @@
-const path = require('path');
-const fs = require('fs');
+const inventoryModel = require('../models/inventory-model');
 
-const DATA_PATH = path.join(__dirname, '..', 'data', 'suv_inventory.json');
-
-function loadData() {
-  const raw = fs.readFileSync(DATA_PATH, 'utf8');
-  return JSON.parse(raw);
-}
-
-exports.index = (req, res) => {
-  const data = loadData();
-  res.render('custom', { title: 'SUV Gallery', cars: data.inventory });
+exports.index = async (req, res, next) => {
+  try {
+    const cars = await inventoryModel.getByImagePrefix('/images/suv-');
+    res.render('custom', { title: 'SUV Gallery', cars });
+  } catch (err) {
+    next(err);
+  }
 };
