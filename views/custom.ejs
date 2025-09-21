@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title><%= title %> - CSE Motors</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <h1 class="brand">CSE Motors</h1>
+        <nav class="main-nav">
+          <a href="/">Home</a>
+          <a href="/custom">Custom</a>
+          <a href="#">Sedan</a>
+          <a href="#">Sport</a>
+          <a href="#">SUV</a>
+          <a href="#">Truck</a>
+        </nav>
+        <div class="account">My Account</div>
+      </div>
+    </header>
+
+    <main class="container">
+      <h2>Custom Gallery</h2>
+      <section class="gallery">
+        <% cars.forEach(function(car){ %>
+          <article class="card car-card">
+            <a href="/cars/<%= car.id %>">
+              <img src="<%= car.imagen %>" alt="<%= car.nombre_custom %>" />
+              <h4><%= car.nombre_custom %> — <small><%= car.marca %> <%= car.modelo %></small></h4>
+              <p class="price"><%= car.moneda %> <%= car.precio.toLocaleString() %></p>
+            </a>
+          </article>
+        <% }) %>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <small>&copy; <%= new Date().getFullYear() %> CSE Motors</small>
+      </div>
+    </footer>
+  </body>
+</html>

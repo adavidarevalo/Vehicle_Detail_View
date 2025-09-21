@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title><%= title %> - CSE Motors</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <h1 class="brand">CSE Motors</h1>
+        <nav class="main-nav">
+          <a href="/">Home</a>
+          <a href="/custom">Custom</a>
+          <a href="#">Sedan</a>
+          <a href="#">Sport</a>
+          <a href="#">SUV</a>
+          <a href="#">Truck</a>
+        </nav>
+        <div class="account">My Account</div>
+      </div>
+    </header>
+
+    <main class="container">
+      <div class="card car-detail">
+        <h2><%= car.nombre_custom %> — <small><%= car.marca %> <%= car.modelo %></small></h2>
+        <div class="detail-grid">
+          <div class="image">
+            <img src="<%= car.imagen %>" alt="<%= car.nombre_custom %>" />
+          </div>
+          <div class="info">
+            <p><strong>Precio:</strong> <%= car.moneda %> <%= car.precio.toLocaleString() %></p>
+            <p><strong>Año:</strong> <%= car.año %></p>
+            <p><strong>Motor:</strong> <%= car.motor.tipo %> — <%= car.motor.potencia %> <%= car.motor.unidad_potencia %></p>
+            <p><strong>Color:</strong> <%= car.color %></p>
+            <p><strong>Categoría:</strong> <%= car.categoria %></p>
+            <p><strong>Modificaciones:</strong></p>
+            <ul>
+              <% car.modificaciones.forEach(function(m){ %>
+                <li><%= m %></li>
+              <% }) %>
+            </ul>
+            <p><strong>Disponible:</strong> <%= car.disponible ? 'Sí' : 'No' %></p>
+            <a class="btn primary" href="#">Contact Dealer</a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <small>&copy; <%= new Date().getFullYear() %> CSE Motors</small>
+      </div>
+    </footer>
+  </body>
+</html>

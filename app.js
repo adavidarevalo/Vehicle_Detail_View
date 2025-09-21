@@ -1,0 +1,31 @@
+const express = require('express');
+const path = require('path');
+
+const app = express();
+const PORT = process.env.PORT || 3000;
+
+// Set view engine
+app.set('views', path.join(__dirname, 'views'));
+app.set('view engine', 'ejs');
+
+// Static files
+app.use(express.static(path.join(__dirname, 'public')));
+
+// Parse JSON and urlencoded
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+
+// Routes
+const indexRouter = require('./routes/index');
+app.use('/', indexRouter);
+
+// 404 handler
+app.use((req, res) => {
+  res.status(404).render('404', { url: req.originalUrl });
+});
+
+app.listen(PORT, () => {
+  console.log(`Server running on http://localhost:${PORT}`);
+});
+
+module.exports = app;

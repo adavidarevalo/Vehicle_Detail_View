@@ -1,0 +1,102 @@
+:root{
+  --bg:#f6f8fa;
+  --card:#ffffff;
+  --muted:#6b7280;
+  --accent:#2563eb;
+  --accent-600:#1e40af;
+  --radius:12px;
+  --container:1100px;
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  background:var(--bg);
+  color:#0f172a;
+  -webkit-font-smoothing:antialiased;
+}
+.container{max-width:var(--container);margin:0 auto;padding:0 20px}
+
+.site-header{background:linear-gradient(180deg,#0f172a 0%, #111827 100%);color:#fff}
+.header-inner{display:flex;align-items:center;gap:24px;justify-content:space-between;padding:22px 0}
+.brand{font-size:28px;margin:0;font-weight:700}
+.main-nav{display:flex;gap:18px}
+.main-nav a{color:rgba(255,255,255,0.9);text-decoration:none;padding:8px 10px;border-radius:8px;font-weight:600}
+.main-nav a:hover{background:rgba(255,255,255,0.06)}
+.account{opacity:0.9}
+
+.hero{display:flex;gap:40px;align-items:center;padding:48px 0}
+.hero-text{flex:1;max-width:520px}
+.hero h2{font-size:44px;margin:0 0 12px}
+.lead{color:var(--muted);font-size:18px;margin:0 0 18px}
+.features{list-style:none;padding:0;margin:0 0 20px}
+.features li{margin:6px 0;color:var(--muted)}
+.hero-image{flex:1;display:flex;align-items:center;justify-content:center}
+.hero-image img{max-width:100%;height:auto;border-radius:16px;box-shadow:0 10px 30px rgba(2,6,23,0.12)}
+
+/* Hero background using external image */
+.hero-bg{background-image:url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Falemautos.com.co%2Fwp-content%2Fuploads%2F2023%2F09%2FMercedes-benz-alemautos-hero-glb-35-4matic.webp&f=1&nofb=1&ipt=bdff697042be80e5a5adcc4854b880076b21e4d6e3993ff11f3058f1ec7d226a');background-size:cover;background-position:center;border-radius:16px;padding:60px 0;margin-top:24px}
+.hero-overlay{background:linear-gradient(90deg, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0.75) 40%, rgba(255,255,255,0.06) 100%);display:flex;gap:30px;padding:30px;border-radius:12px}
+
+.hero-ctas{display:flex;align-items:center;gap:16px;margin-top:18px}
+.hero-ctas.centered{justify-content:center}
+
+.btn{display:inline-block;padding:12px 20px;border-radius:10px;text-decoration:none;font-weight:700}
+.btn.primary{background:var(--accent);color:#fff;box-shadow:0 8px 20px rgba(37,99,235,0.18)}
+.btn.primary:hover{background:var(--accent-600)}
+
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;padding:40px 0}
+.card{background:var(--card);padding:24px;border-radius:12px;box-shadow:0 6px 18px rgba(15,23,42,0.06)}
+.card h3{margin:0 0 8px}
+.card p{margin:0;color:var(--muted)}
+
+.glb-features{padding-bottom:60px}
+.card.glb ul{margin:12px 0 16px;padding-left:18px;color:var(--muted)}
+.card.glb a.btn{background:#f8fafc;color:#0f172a;border:1px solid rgba(15,23,42,0.04)}
+
+/* Gallery */
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;padding:24px 0}
+.car-card img{width:100%;height:160px;object-fit:cover;border-radius:8px;margin-bottom:10px}
+.car-card h4{margin:0 0 6px;font-size:16px}
+.car-card .price{color:var(--accent);font-weight:800}
+
+@media (max-width:900px){
+  .gallery{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width:600px){
+  .gallery{grid-template-columns:1fr}
+  .detail-grid{display:block}
+}
+
+/* Car detail */
+.car-detail .detail-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;align-items:start}
+.car-detail .image img{width:100%;height:auto;border-radius:10px}
+.car-detail .info ul{margin:8px 0 16px;padding-left:18px;color:var(--muted)}
+
+/* Enhanced car detail styles */
+.car-detail{padding:28px; margin-block:30px}
+.car-detail h2{font-size:28px;margin-bottom:12px}
+.car-detail .price-badge{display:inline-block;background:var(--accent);color:#fff;padding:10px 14px;border-radius:10px;font-weight:800;margin-top:10px}
+.car-detail .detail-grid{align-items:start}
+.car-detail .image{background:linear-gradient(180deg, rgba(0,0,0,0.02), rgba(0,0,0,0.03));padding:12px;border-radius:12px}
+.car-detail .info{display:flex;flex-direction:column;gap:12px}
+.car-detail .specs{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+.spec-chip{background:rgba(15,23,42,0.04);padding:8px 10px;border-radius:999px;font-size:13px;color:var(--muted);display:inline-block}
+.car-detail .btn-row{display:flex;gap:12px;margin-top:12px}
+.car-detail .btn.secondary{background:transparent;border:1px solid rgba(15,23,42,0.08);color:#0f172a}
+
+@media (max-width:900px){
+  .car-detail .specs{grid-template-columns:1fr}
+}
+
+
+.site-footer{padding:28px 0;border-top:1px solid rgba(15,23,42,0.04);background:transparent}
+
+@media (max-width:800px){
+  .hero{flex-direction:column;text-align:center}
+  .main-nav{display:none}
+  .grid{grid-template-columns:1fr}
+  .header-inner{gap:12px}
+}
+
