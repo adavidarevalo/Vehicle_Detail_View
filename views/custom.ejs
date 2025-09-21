@@ -10,6 +10,11 @@
     <header class="site-header">
       <div class="container header-inner">
         <h1 class="brand">CSE Motors</h1>
+
+        <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+          <span class="bars"></span>
+        </button>
+
         <nav class="main-nav">
           <a href="/">Home</a>
           <a href="/custom">Custom</a>
@@ -18,7 +23,20 @@
           <a href="/suv">SUV</a>
           <a href="/truck">Truck</a>
         </nav>
+
         <div class="account">My Account</div>
+      </div>
+
+      <div class="mobile-nav" hidden>
+        <div class="container">
+          <a href="/">Home</a>
+          <a href="/custom">Custom</a>
+          <a href="/sedans">Sedan</a>
+          <a href="/sport">Sport</a>
+          <a href="/suv">SUV</a>
+          <a href="/truck">Truck</a>
+          <div class="mobile-account">My Account</div>
+        </div>
       </div>
     </header>
 
@@ -42,5 +60,6 @@
         <small>&copy; <%= new Date().getFullYear() %> CSE Motors</small>
       </div>
     </footer>
+    <script src="/js/menu.js"></script>
   </body>
 </html>

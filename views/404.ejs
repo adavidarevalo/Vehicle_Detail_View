@@ -1,16 +1,66 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>404 Not Found</title>
+    <title>404 - Page Not Found</title>
     <link rel="stylesheet" href="/css/style.css" />
+    <style>
+      .notfound-wrap{min-height:70vh;display:flex;align-items:center;justify-content:center;padding:40px}
+      .notfound-card{background:var(--card-bg, #0f1724);color:var(--muted-white,#edf2f7);padding:28px;border-radius:12px;box-shadow:0 8px 30px rgba(2,6,23,0.6);max-width:720px;width:100%;text-align:center}
+      .notfound-card h1{font-size:48px;margin:0 0 12px}
+      .notfound-card p{margin:0 0 18px;color:var(--muted,#cbd5e1)}
+      .notfound-card .btn{display:inline-block;padding:10px 18px;border-radius:8px;text-decoration:none;background:var(--accent,#2563eb);color:#fff;font-weight:600}
+      @media (max-width:600px){.notfound-card h1{font-size:32px}}
+    </style>
   </head>
   <body>
-    <main>
-      <h1>404 - No encontrado</h1>
-      <p>La ruta <code><%= url %></code> no existe.</p>
-      <a href="/">Volver al inicio</a>
+    <header class="site-header">
+      <div class="container header-inner">
+        <h1 class="brand">CSE Motors</h1>
+
+        <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+          <span class="bars"></span>
+        </button>
+
+        <nav class="main-nav">
+          <a href="/">Home</a>
+          <a href="/custom">Custom</a>
+          <a href="/sedans">Sedan</a>
+          <a href="/sport">Sport</a>
+          <a href="/suv">SUV</a>
+          <a href="/truck">Truck</a>
+        </nav>
+
+        <div class="account">My Account</div>
+      </div>
+
+      <div class="mobile-nav" hidden>
+        <div class="container">
+          <a href="/">Home</a>
+          <a href="/custom">Custom</a>
+          <a href="/sedans">Sedan</a>
+          <a href="/sport">Sport</a>
+          <a href="/suv">SUV</a>
+          <a href="/truck">Truck</a>
+          <div class="mobile-account">My Account</div>
+        </div>
+      </div>
+    </header>
+
+    <main class="notfound-wrap">
+      <div class="notfound-card">
+        <h1>404 — Page Not Found</h1>
+        <p>The route <code><%= url %></code> does not exist or has been moved.</p>
+        <a class="btn" href="/">Return Home</a>
+      </div>
     </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <small>&copy; <%= new Date().getFullYear() %> CSE Motors</small>
+      </div>
+    </footer>
+    <script src="/js/menu.js"></script>
   </body>
 </html>
