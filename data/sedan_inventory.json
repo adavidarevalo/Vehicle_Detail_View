@@ -22,7 +22,7 @@
       ],
       "color": "Gun Metallic with red accents",
       "category": "Economy Compact Sedan",
-      "image": "https://images.unsplash.com/photo-1550355191-aa8a80b41353?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
+  "image": "/images/sedan-nissan.webp",
       "available": true
     },
     {
@@ -46,7 +46,7 @@
       ],
       "color": "Intense Blue with black interior",
       "category": "Economy Compact Sedan",
-      "image": "https://images.unsplash.com/photo-1583121274602-3e2820c69888?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
+  "image": "/images/sedan-hyundai.webp",
       "available": true
     },
     {
@@ -70,7 +70,7 @@
       ],
       "color": "Classic Silver with TRD accents",
       "category": "Reliable Compact Sedan",
-      "image": "https://images.unsplash.com/photo-1606016159991-2df5d17131b8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
+  "image": "/images/sedan-toyota.webp",
       "available": true
     }
   ]

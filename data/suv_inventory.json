@@ -21,7 +21,7 @@
       ],
       "color": "Army Green with TRD Pro graphics",
       "category": "Mid-Size Off-Road SUV",
-      "image": "https://images.unsplash.com/photo-1544636331-e26879cd4d9b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
+  "image": "/images/suv-toyota.webp",
       "available": true
     },
     {
@@ -45,7 +45,7 @@
       ],
       "color": "Firecracker Red with black soft top",
       "category": "Compact Off-Road Hybrid SUV",
-      "image": "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
+  "image": "/images/suv-jeep.webp",
       "available": true
     },
     {
@@ -69,7 +69,7 @@
       ],
       "color": "Cactus Gray with orange accents",
       "category": "Mid-Size Off-Road SUV",
-      "image": "https://images.unsplash.com/photo-1606016159991-2df5d17131b8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
+  "image": "/images/suv-ford.webp",
       "available": true
     }
   ]
