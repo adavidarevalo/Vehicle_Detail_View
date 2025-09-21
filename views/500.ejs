@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>500 - Server Error</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <style>
+      .err-wrap{min-height:70vh;display:flex;align-items:center;justify-content:center;padding:40px}
+      .err-card{background:var(--card-bg,#0f1724);color:var(--muted-white,#edf2f7);padding:28px;border-radius:12px;box-shadow:0 8px 30px rgba(2,6,23,0.6);max-width:720px;width:100%;text-align:center}
+      .err-card h1{font-size:48px;margin:0 0 12px}
+      .err-card p{margin:0 0 18px;color:var(--muted,#cbd5e1)}
+      .err-meta{font-family:monospace;background:rgba(255,255,255,0.03);padding:12px;border-radius:8px;overflow:auto;text-align:left}
+      @media (max-width:600px){.err-card h1{font-size:32px}}
+    </style>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <h1 class="brand">CSE Motors</h1>
+
+        <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+          <span class="bars"></span>
+        </button>
+
+        <nav class="main-nav">
+          <a href="/">Home</a>
+          <a href="/custom">Custom</a>
+          <a href="/sedans">Sedan</a>
+          <a href="/sport">Sport</a>
+          <a href="/suv">SUV</a>
+          <a href="/truck">Truck</a>
+        </nav>
+
+        <div class="account">My Account</div>
+      </div>
+    </header>
+
+    <main class="err-wrap">
+      <div class="err-card">
+        <h1>500 — Server Error</h1>
+        <p>Sorry — something went wrong on our end. The team has been notified.</p>
+        <div class="err-meta">
+          <strong>Route:</strong> <code><%= url %></code>
+          <% if (error && error.message) { %>
+            <div style="margin-top:8px"><strong>Message:</strong> <%= error.message %></div>
+          <% } %>
+        </div>
+
+        <div style="margin-top:18px">
+          <a class="btn" href="/">Return Home</a>
+          <a class="btn" href="/custom" style="margin-left:8px">Custom Gallery</a>
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <small>&copy; <%= new Date().getFullYear() %> CSE Motors</small>
+      </div>
+    </footer>
+    <script src="/js/menu.js"></script>
+  </body>
+</html>

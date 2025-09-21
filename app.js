@@ -19,9 +19,20 @@ app.use(express.urlencoded({ extended: true }));
 const indexRouter = require('./routes/index');
 app.use('/', indexRouter);
 
+// Error route for intentional 500
+const errorController = require('./controllers/errorController');
+app.get('/error/500', errorController.trigger);
+
 // 404 handler
 app.use((req, res) => {
   res.status(404).render('404', { url: req.originalUrl });
+});
+
+// Error handler middleware (must have 4 args)
+app.use((err, req, res, next) => {
+  console.error(err.stack || err);
+  const status = err.status || 500;
+  res.status(status).render('500', { error: err, url: req.originalUrl });
 });
 
 app.listen(PORT, () => {
