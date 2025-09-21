@@ -1,12 +1,4 @@
 {
-  "dealer": {
-    "name": "Performance Sport Motors",
-    "contact": {
-      "phone": "+1-555-SPORT1",
-      "email": "info@performancesport.com",
-      "address": "7890 Speed Avenue, Racing Hills, RH 24680"
-    }
-  },
   "inventory": [
     {
       "id": "PSM001",

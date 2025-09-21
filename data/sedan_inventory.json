@@ -1,12 +1,5 @@
 {
-  "dealer": {
-    "name": "Budget Sedan Center",
-    "contact": {
-      "phone": "+1-555-BUDGET",
-      "email": "sales@budgetsedan.com",
-      "address": "2468 Economy Blvd, Value City, VC 13579"
-    }
-  },
+
   "inventory": [
     {
       "id": "BSC001",

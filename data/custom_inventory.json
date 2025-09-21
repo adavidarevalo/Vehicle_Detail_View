@@ -1,12 +1,4 @@
 {
-  "dealer": {
-    "name": "Premium Custom Motors",
-    "contact": {
-      "phone": "+1-555-CUSTOM",
-      "email": "sales@premiumcustom.com",
-      "address": "1234 Speed Street, Motor City, MC 12345"
-    }
-  },
   "inventory": [
     {
       "id": "PCM001",

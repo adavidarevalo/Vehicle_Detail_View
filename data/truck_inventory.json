@@ -1,12 +1,4 @@
 {
-  "dealer": {
-    "name": "American Truck Masters",
-    "contact": {
-      "phone": "+1-555-TRUCK-1",
-      "email": "sales@americantrucks.com",
-      "address": "1234 Hauler Highway, Steel City, SC 45678"
-    }
-  },
   "inventory": [
     {
       "id": "ATM001",

@@ -1,12 +1,4 @@
 {
-  "dealer": {
-    "name": "Elite SUV Specialists",
-    "contact": {
-      "phone": "+1-555-SUV-PROS",
-      "email": "sales@elitesuv.com",
-      "address": "3456 Adventure Drive, Mountain View, MV 98765"
-    }
-  },
   "inventory": [
     {
       "id": "ESS001",
